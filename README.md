@@ -1,6 +1,6 @@
 # WordSumVec
 
-An alpha release of a microserve to be able to cache a word2vec build of 
+An alpha release of a microservice to cache a word2vec build of 
 a body of text along with a word2vec configuration. 
  
 This tool enables other services to model the nearest words of a word within the cached word2vec.
