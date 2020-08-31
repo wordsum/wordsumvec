@@ -1,0 +1,5 @@
+bootJar {
+    baseName = 'wordsumvec'
+    version =  '0.1.0'
+}
+

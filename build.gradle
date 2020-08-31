@@ -1,0 +1,27 @@
+buildscript {
+    repositories {
+        jcenter()
+        mavenCentral()
+        maven {
+            url "https://plugins.gradle.org/m2"
+        }
+    }
+    dependencies {
+        classpath 'org.springframework.boot:spring-boot-gradle-plugin:2.1.1.RELEASE'
+    }
+}
+
+plugins {
+    id 'org.springframework.boot' version '2.3.3.RELEASE'
+    id 'io.spring.dependency-management' version '1.0.10.RELEASE'
+    id 'java'
+
+}
+
+apply from: 'gradle/dependencies.gradle'
+apply from: 'gradle/test.gradle'
+apply from: 'gradle/jar.gradle'
+
+sourceCompatibility = '1.14'
+targetCompatibility = '1.14'
+
